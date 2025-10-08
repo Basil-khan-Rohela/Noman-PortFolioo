@@ -1,0 +1,85 @@
+.about-section {
+  padding: 80px 10%;
+  background: #0b0c10;
+  color: #fff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.video-card {
+  position: relative;
+  flex: 1 1 500px;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.video-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 60px rgba(0, 255, 255, 0.2);
+}
+
+.about-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.about-video[src] {
+  opacity: 1;
+}
+
+.video-badges {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.badge {
+  background: rgba(0, 255, 255, 0.2);
+  border: 1px solid rgba(0, 255, 255, 0.6);
+  color: cyan;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  transition: 0.3s;
+}
+
+.badge:hover {
+  background: rgba(0, 255, 255, 0.4);
+  color: #fff;
+}
+
+.about-text {
+  flex: 1 1 400px;
+  max-width: 500px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.about-text strong {
+  color: cyan;
+}
